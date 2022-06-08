@@ -63,6 +63,8 @@ jobs:
         distribution: 'temurin'
     - name: Run Java source code
       run: |
+          echo pwd
+          cd github-action-example
            .mvnw -B package -s .mvn/settings.xml -DskipTests
            fi
       shell: bash   
