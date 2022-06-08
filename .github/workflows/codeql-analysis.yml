@@ -68,8 +68,7 @@ jobs:
           echo pwd
           cd /home/runner/work/github-action-example
           ls 
-          chmod +x mvnw
-           .mvnw -B package -s .mvn/settings.xml -DskipTests
+           .mvn/wrapper/ -B package -s .mvn/settings.xml -DskipTests
            fi
       shell: bash   
       # cd github-action-example
