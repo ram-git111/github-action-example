@@ -66,6 +66,7 @@ jobs:
     - name: Run Java source code
       run: |
           echo pwd
+          cd github-action-example
           chmod +x mvnw
            .mvnw -B package -s .mvn/settings.xml -DskipTests
            fi
