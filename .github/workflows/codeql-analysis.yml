@@ -64,8 +64,7 @@ jobs:
         cache: maven
     - name: Run Java source code
       run: |
-            mvn clean install
-            fi
+            mvn package
       shell: bash   
       # cd github-action-example
         #  E:\GitHub\SpringBoot-GitHub-Action\githubaction\target\githubaction-0.0.1-SNAPSHOT.war
