@@ -59,7 +59,7 @@ jobs:
       if: always()
       with: 
        # languages: ${{ matrix.language }}
-        java-versions: '1.8'
+        java-version: '8'
         distrubtion: 'temurin'
     - name: Run Java source code
       run: |
