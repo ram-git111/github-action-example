@@ -21,7 +21,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: mvp
+    runs-on: [mvp]
     permissions:
       actions: read
       contents: read
