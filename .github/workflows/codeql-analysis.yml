@@ -61,9 +61,10 @@ jobs:
        # languages: ${{ matrix.language }}
         java-version: '8'
         distribution: 'temurin'
+    - name: Setup Maven
+      uses: stCarolas/setup-maven@v4.3
     - name: Run Java source code
       run: |
-          echo "/opt/maven/bin" >> $GITHUB_ENV
           echo pwd
           chmod +x mvnw
            .mvnw -B package -s .mvn/settings.xml -DskipTests
