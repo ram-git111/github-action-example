@@ -60,7 +60,7 @@ jobs:
       with: 
        # languages: ${{ matrix.language }}
         java-version: '8'
-        distrubtion: 'temurin'
+        distribution: 'temurin'
     - name: Run Java source code
       run: |
            cd githubaction/target/
