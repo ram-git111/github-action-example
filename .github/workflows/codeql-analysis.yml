@@ -61,15 +61,10 @@ jobs:
        # languages: ${{ matrix.language }}
         java-version: '8'
         distribution: 'temurin'
-    - name: Setup Maven
-      uses: stCarolas/setup-maven@v4.3
+        #cache: maven
     - name: Run Java source code
       run: |
-          echo pwd
-          cd /home/runner/work/github-action-example
-          ls 
-           .mvn/wrapper/ -B package -s .mvn/settings.xml -DskipTests
-           fi
+            mvn package
       shell: bash   
       # cd github-action-example
         #  E:\GitHub\SpringBoot-GitHub-Action\githubaction\target\githubaction-0.0.1-SNAPSHOT.war
