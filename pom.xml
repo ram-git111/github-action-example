@@ -11,7 +11,7 @@
 	<groupId>com.githubaction</groupId>
 	<artifactId>githubaction</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<name>githubaction</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -43,7 +43,7 @@
     			<version>2.1</version>
 			</plugin>
 		</plugins>
-		<pluginManagement>
+	<pluginManagement>
 		<plugins>
 			<plugin>
 			 	<artifactId>maven-compiler-plugin</artifactId>
@@ -56,9 +56,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.7</version>
-			</plugin>
+			</plugin
 		</plugins>
-		</pluginManagement>
+	</pluginManagement>
 	</build>
-
 </project>
